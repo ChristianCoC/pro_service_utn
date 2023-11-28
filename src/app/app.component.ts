@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pro-service';
+  menuOpciones: string = '';
+
+  selectOpciones(menuOpciones: string) {
+    this.menuOpciones = menuOpciones;
+  }
 }
